@@ -1,0 +1,76 @@
+:root {
+    --primary-font: Arial, sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-family: var(--primary-font);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.img-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.63);
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.banner {
+    position: absolute;
+    top: 25vh;
+    left: 10vw;
+}
+
+.banner h1 {
+    font-size: 400%;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.banner h2 {
+    font-size: 200%;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+header .links {
+    position: absolute;
+    top: 65vh;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .links a {
+    margin: 0 4px;
+    padding: 10px;
+    width: 100px;
+    height: 28px;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 24px;
+    transition: 0.5s;
+}
+
+header .links a:hover {
+    font-size: 36px;
+    width: 150px;
+    height: 42px;
+}
